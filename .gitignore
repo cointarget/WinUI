@@ -41,10 +41,8 @@ project.fragment.lock.json
 *.nuget.g.props
 *.nuget.g.targets
 project.assets.json
-# Если используешь packages.config (редко):
 packages/
-# Локальный кеш nuget
-# .nuget/ - обычно не нужен, но оставим вне игнора на случай приватных конфигов
+.nuget/
 
 # -----------------------
 # Test / Coverage
@@ -104,7 +102,6 @@ BenchmarkDotNet.Artifacts/
 # -----------------------
 # WPF / Publish
 # -----------------------
-# (обычно всё в obj/bin, но на всякий случай)
 *.baml
 
 # ClickOnce / Publish
