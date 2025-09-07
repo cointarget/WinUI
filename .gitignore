@@ -1,0 +1,119 @@
+# -----------------------
+# Visual Studio / IDE
+# -----------------------
+.vs/
+.idea/
+.vscode/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+*.code-workspace
+
+# -----------------------
+# Build results
+# -----------------------
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+Generated\ Files/
+
+# -----------------------
+# .NET / NuGet
+# -----------------------
+artifacts/
+project.lock.json
+project.fragment.lock.json
+*.nuget.g.props
+*.nuget.g.targets
+project.assets.json
+# Если используешь packages.config (редко):
+packages/
+# Локальный кеш nuget
+# .nuget/ - обычно не нужен, но оставим вне игнора на случай приватных конфигов
+
+# -----------------------
+# Test / Coverage
+# -----------------------
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+BenchmarkDotNet.Artifacts/
+*.coverage
+*.coveragejson
+
+# -----------------------
+# Static analysis
+# -----------------------
+.sonarqube/
+.scannerwork/
+
+# -----------------------
+# VS generated files
+# -----------------------
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Artifacts we never commit
+*.dll
+*.exe
+*.cache
+*.zip
+*.log
+
+# -----------------------
+# WPF / Publish
+# -----------------------
+# (обычно всё в obj/bin, но на всякий случай)
+*.baml
+
+# ClickOnce / Publish
+app.publish/
+publish/
+*.pubxml.user
+
+# -----------------------
+# Misc OS files
+# -----------------------
+.DS_Store
+Thumbs.db
