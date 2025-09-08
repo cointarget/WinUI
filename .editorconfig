@@ -6,8 +6,9 @@ end_of_line = lf
 insert_final_newline = true
 indent_style = space
 indent_size = 4
+trim_trailing_whitespace = true
 
-# C# code style
+# C# style rules
 [*.cs]
 dotnet_style_qualification_for_field = false:suggestion
 dotnet_style_qualification_for_property = false:suggestion
@@ -17,5 +18,22 @@ csharp_new_line_before_open_brace = all
 csharp_style_var_for_built_in_types = true:suggestion
 csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
-dotnet_diagnostic.IDE0005.severity = warning   # using removal
-dotnet_diagnostic.IDE0060.severity = suggestion # unused param
+
+# Enforce cleanup rules
+dotnet_diagnostic.IDE0005.severity = warning   # Remove unused using directives
+dotnet_diagnostic.IDE0060.severity = suggestion # Remove unused parameters
+dotnet_diagnostic.IDE0044.severity = suggestion # Make fields readonly if possible
+dotnet_diagnostic.IDE0049.severity = suggestion # Use var or explicit types according to style
+
+# XAML style rules
+[*.xaml]
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Project and solution files
+[*.{csproj,sln,props,targets}]
+end_of_line = lf
+insert_final_newline = true
