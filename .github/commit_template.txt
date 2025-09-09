@@ -1,0 +1,20 @@
+# Conventional Commit header (required):
+# <type>(<scope>)!: <short summary>
+# types: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+# examples:
+# feat(terminal): add theme switcher
+# fix(nav): prevent crash on empty frame
+# chore: bump wpf-ui to 4.0.3
+
+<type>(<scope>): <short summary>
+
+# Body (optional):
+# - Explain what and why, not how.
+# - Wrap at ~72 columns if possible.
+
+# BREAKING CHANGE (optional):
+# - Describe breaking change and migration path.
+
+# Footer (optional):
+# - Closes #123
+# - Co-authored-by: Name <email>
